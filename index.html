@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+</head>
+<body>
+<!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" class="section hero" data-aos="fade-up">
+    <h1>Hello, I'm <span class="highlight">Apdalle Mustaph</span></h1>
+    <p>A passionate developer</p>
+  </section>
+
+  <section id="about" class="section" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer with a strong interest in building responsive and user-friendly websites. I specialize in front-end development using HTML, CSS, and JavaScript.
+         I love solving problems through code and continuously learning new technologies to improve my skills and deliver high-quality digital experiences.</p>
+  </section>
+
+  <section id="skills" class="section" data-aos="zoom-in">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li data-aos="fade-up" data-aos-delay="100">HTML</li>
+      <li data-aos="fade-up" data-aos-delay="200">CSS</li>
+      <li data-aos="fade-up" data-aos-delay="300">JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section" data-aos="zoom-in">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+      <a href="https://yourprojectlink.com" target="_blank">View</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Todo App</h3>
+      <p>Manage tasks with a minimal and user-friendly interface.</p>
+      <a href="https://example.com/todo" target="_blank">View</a>
+    </div>
+    <div class="project-card">
+      <h3>Delivey app</h3>
+      <p>Manage tasks with a minimal and user-friendly interface.</p>
+      <a href="https://example.com/todo" target="_blank">View</a>
+    </div>
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>Get real-time weather updates for any location.</p>
+      <a href="https://example.com/weather" target="_blank">View</a>
+    </div>
+    <div class="project-card">
+      <h3>Blog Platform</h3>
+      <p>A platform to share articles and engage with readers.</p>
+      <a href="https://example.com/blog" target="_blank">View</a>
+
+    <!-- Add more project cards like above -->
+  </div>
+</section>
+
+
+  <section id="contact" class="section" data-aos="fade-left">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="status-message"></p>
+  </section>
+
+  <footer data-aos="fade-in">
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("FBdrJHTXkj3mSgu3u"); // replace with your public key
+    })();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
