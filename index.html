@@ -18,21 +18,30 @@
     AOS.init();
   </script>
   <header>
-    <nav class="navbar">
-      <div class="logo">MyPortfolio</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="theme-toggle" class="theme-toggle">🌙</button>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+  </nav>
+</header>
+
 
   <section id="home" class="section hero" data-aos="fade-up">
-    <h1>Hello, I'm <span class="highlight">Apdalle Mustaph</span></h1>
+    <h1>Hello, I'm <span class="highlight">Apdalle Mustaf</span></h1>
     <p>A passionate developer</p>
   </section>
 
@@ -80,7 +89,8 @@
       <p>A platform to share articles and engage with readers.</p>
       <a href="https://example.com/blog" target="_blank">View</a>
 
-    <!-- Add more project cards like above -->
+    <!-- Add more project cards like
+      above -->
   </div>
 </section>
 
@@ -97,7 +107,7 @@
   </section>
 
   <footer data-aos="fade-in">
-    <p>&copy; 2025 Your Name</p>
+    <p>&copy; <span id="current-year"></span> Your Name</p>
   </footer>
 
   <!-- EmailJS -->
@@ -108,6 +118,14 @@
     })();
   </script>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
+
+<!-- 
+      
+git add .
+git commit -m "Update portfolio"
+git push
+
+ -->
